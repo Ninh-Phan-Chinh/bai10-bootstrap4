@@ -1,0 +1,20 @@
+.swim-container {
+    display: block;
+    position: relative;
+}
+
+.swim-container img {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.swim-container > img:first-child {
+    opacity: 1;
+    transition: all 0.7s;
+    z-index: 100;
+}
+
+.swim-container:hover > img:first-child {
+    opacity: 0;
+    /* transition: all 0.7s; */
+}
